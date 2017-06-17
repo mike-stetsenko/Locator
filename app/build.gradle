@@ -22,8 +22,9 @@ android {
     }
 }
 
-def playServices = '10.2.6'
+def playServices = '11.0.1'
 def daggerVers = '2.9'
+def archRoomVersion = '1.0.0-alpha3'
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -31,6 +32,10 @@ dependencies {
 
     compile "com.google.android.gms:play-services-location:$playServices"
     compile "com.google.android.gms:play-services-maps:$playServices"
+
+    // Database
+    compile "android.arch.persistence.room:runtime:$archRoomVersion"
+    kapt "android.arch.persistence.room:compiler:$archRoomVersion"
 
     // RX
     compile 'io.reactivex:rxandroid:1.2.1'
@@ -47,7 +52,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.google.android.gms:play-services-maps:10.2.6'
     testCompile 'junit:junit:4.12'
 }
 

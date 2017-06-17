@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Location tracker</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">Location tracker</string>
     <string name="request_fine_location_permission">For read the fine location of your device, please allow access to LOCATION</string>
 </resources>

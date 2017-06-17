@@ -8,7 +8,6 @@ import android.graphics.BitmapFactory
 import android.os.IBinder
 import android.support.v4.content.res.ResourcesCompat
 import timber.log.Timber
-
 import javax.inject.Inject
 
 class LocationLoggerService : Service() {
